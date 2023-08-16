@@ -39,15 +39,15 @@ ActiveRecord::Schema[7.0].define(version: 20_230_815_134_156) do
     t.bigint 'author_id'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
-    t.integer 'comments_counter'
+    t.integer 'comment_counter'
     t.integer 'likes_counter'
+    t.integer 'comments_counter'
     t.index ['author_id'], name: 'index_posts_on_author_id'
   end
 
   create_table 'users', force: :cascade do |t|
     t.string 'name'
     t.string 'photo'
-    t.string 'bio'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
     t.integer 'posts_counter'
