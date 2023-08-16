@@ -42,7 +42,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- [x] **Database tables**
+- [x] **Display Users**
+- [x] **Display Posts**
+- [x] **Display Comments**
+- [x] **Display Likes**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,14 +64,20 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 In order to run this project you need:
-  * A basic understanding of Ruby and Git
+  * A basic understanding of Ruby, Rails and Git
 ### Usage
 1. Install Ruby
+1. Install Rails
 2. Clone this repo 
 ```
 git clone git@github.com:Nasirkhan294/blog_app.git
 ```
 
+To run the project, execute the following command:
+
+```sh
+  rails s
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
