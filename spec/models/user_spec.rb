@@ -25,7 +25,7 @@ RSpec.describe User, type: :model do
     user = User.create(name: 'Nasir', posts_counter: 0)
     expect(user.valid?).to eq true
 
-    3.times { Post.create(author: user, title: 'Hello World', content: 'this is my first post') }
-    expect(user.recent_posts.to_a).to eq user.posts.order(created_at: :desc).limit(3).to_a
+    3.times { Post.create(author: user, title: 'Hello World', text: 'this is my first post') }
+    expect(user.recent_three.to_a).to eq user.posts.order(created_at: :desc).limit(3).to_a
   end
 end
