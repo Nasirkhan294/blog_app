@@ -80,7 +80,6 @@ To run the project, execute the following command:
   rails s
 ```
 
-Run tests
 To run tests, run the following command:
 
 ```
