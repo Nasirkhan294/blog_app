@@ -46,6 +46,7 @@
 - [x] **Display Posts**
 - [x] **Display Comments**
 - [x] **Display Likes**
+- [x] **Validation & Unit Tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,8 +76,15 @@ git clone git@github.com:Nasirkhan294/blog_app.git
 
 To run the project, execute the following command:
 
-```sh
+```
   rails s
+```
+
+To run tests, run the following command:
+
+```
+bundle exec rspec spec/models
+
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +105,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Validation & Unit Tests**
+- [ ] **Controllers**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
