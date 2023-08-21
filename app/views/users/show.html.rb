@@ -1,0 +1,1 @@
+<h1>Details about the user!</h1>
