@@ -2,7 +2,10 @@
 
 <div align="center">
   <h1>📖 Blog App</h>
+</div>
 
+<div align="center">
+  <img src="./app/assets/images/screenshot.png" alt="screenshot"/>
 </div>
 
 <!-- TABLE OF CONTENTS -->
