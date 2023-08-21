@@ -47,6 +47,7 @@
 - [x] **Display Comments**
 - [x] **Display Likes**
 - [x] **Validation & Unit Tests**
+- [x] **Controllers**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +106,7 @@ bundle exec rspec spec/models
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Controllers**
+- [ ] **Add forms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
