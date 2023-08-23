@@ -5,7 +5,7 @@ RSpec.describe 'Users', type: :request do
       get '/users'
       expect(response).to be_successful
       expect(response).to render_template(:index)
-      expect(response.body).to include('List of Users')
+      expect(response.body).to include('Here is a the list of all users')
     end
   end
   describe 'GET /show' do
@@ -14,7 +14,7 @@ RSpec.describe 'Users', type: :request do
       get '/users/1'
       expect(response).to be_successful
       expect(response).to render_template(:show)
-      expect(response.body).to include('Details about the user!')
+      expect(response.body).to include('Here are details for a given user')
     end
   end
 end
