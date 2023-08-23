@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>user list</title>
-  </head>
-  <body>
-    <h1>Here is a the list of all users</h1>
-  </body>
-</html>
+<div class="container mt-5">
+  <% if @users.empty? %>
+    <p>There are no users for now</p>
+  <% end %>
+  <% @users.each do |user| %>
+    <a href="/users/<%= user.id %>" class="text-decoration-none">
+      <%= render 'shared/user_card', user: user %>
+    </a>
+  <% end %>
+</div>
