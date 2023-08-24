@@ -1,4 +1,4 @@
-class PostsController < ActionController::Base
+class PostsController < ApplicationController
   def index
     page = params[:page] || 1
     per_page = 10
