@@ -1,6 +1,7 @@
-class UsersController < ActionController::Base
+class UsersController < ApplicationController
   def index
     @users = User.all
+    @current_user = current_user
   end
 
   def show

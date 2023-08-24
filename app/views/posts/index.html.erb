@@ -1,5 +1,6 @@
 <div class="container mt-5">
   <%= render 'shared/user_card', user: @author %>
+
   <% if @posts.empty? %>
     <p>This user has no posts yet</p>
   <% end %>

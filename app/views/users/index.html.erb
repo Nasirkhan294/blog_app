@@ -7,4 +7,5 @@
       <%= render 'shared/user_card', user: user %>
     </a>
   <% end %>
+  <%= link_to 'Add a new post', "/users/#{@current_user.id}/posts/new", class: "btn btn-primary" %>
 </div>

@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <h1>Add New Comment to post: <%= @post.title %></h1>
+  <% if @comment.errors.any? %>
+    <div class="post-errors-box">
+      <p><%= pluralize(@comment.errors.count, "error") %> found:</p>
+
+      <ul class="post-errors-ul">
+        <% @comment.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= form_with model: @comment do |form| %>
+    <div class="form-group">
+      <%= form.label :text %>
+      <%= form.text_area :text, size: "70x5", class: 'form-control' %>
+    </div>
+    <%= form.submit class: 'btn btn-primary mt-3' %>
+  <% end %>
+</div>
