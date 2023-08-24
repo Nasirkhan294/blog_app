@@ -14,7 +14,7 @@ RSpec.describe 'Users', type: :request do
   describe 'GET /show' do
     it 'renders the users show template and includes correct placeholder' do
       User.create(name: 'Nasir')
-      get '/users/#{@user.id}'
+      get "/users/#{@user.id}"
       expect(response).to be_successful
       expect(response).to render_template(:show)
     end
