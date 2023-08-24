@@ -33,15 +33,16 @@ class PostsController < ActionController::Base
       flash.now[:error] = 'error: question could not be saved'
       redirect_to new_user_post_path
     end
+  end
 
-    def new
-      @post = Post.new
-      @current_user = current_user
-    end
+  def new
+    @post = Post.new
+    @current_user = current_user
+  end
 
-    private
+  private
 
-    def post_params
-      params.require(:post).permit(:title, :text)
-    end
+  def post_params
+    params.require(:post).permit(:title, :text)
+  end
 end
