@@ -15,5 +15,5 @@
     </div>
   </div>
   <%= render 'shared/comments_card', comments: @post.comments unless @post.comments.empty? %>
-  <%= link_to 'Add a new comment', "/users/#{@current_user.id}/posts/#{@post.id}/comments/new", class: "btn btn-primary mt-3" %>
+  <%= link_to 'Add a new comment', new_post_comment_path(@post), class: "btn btn-primary mt-3" %>
 </div>
