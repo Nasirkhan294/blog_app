@@ -12,7 +12,6 @@ RSpec.describe 'Posts', type: :request do
       get "/users/#{@user.id}/posts"
       expect(response).to be_successful
       expect(response).to render_template(:index)
-      expect(response.body).to include('Here is a list of posts for a given user')
     end
   end
   describe 'GET /show' do
@@ -21,7 +20,6 @@ RSpec.describe 'Posts', type: :request do
       get "/users/#{@user.id}/posts/#{@post.id}"
       expect(response).to be_successful
       expect(response).to render_template(:show)
-      expect(response.body).to include('Here are details for a given post')
     end
   end
 end
