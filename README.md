@@ -105,6 +105,12 @@ bundle exec rspec spec
 - Twitter: [NasirMa35888225](https://twitter.com/NasirMa35888225)
 - LinkedIn: [nasirmahd](https://www.linkedin.com/in/nasirmahd/)
 
+👤  **Shalini Nayan**
+
+- GitHub: [@ShaliniNayan](https://github.com/ShaliniNayan)
+- Twitter: [@sndprs](https://twitter.com/sndprs)
+- LinkedIn: [shalininayan](https://www.linkedin.com/in/shalininayan/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
