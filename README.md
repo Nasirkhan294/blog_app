@@ -53,6 +53,7 @@
 - [x] **Controllers**
 - [x] **Views**
 - [x] **Add Forms**
+- [x] **Capybara tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +90,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```
-bundle exec rspec spec/models
+bundle exec rspec spec
 
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
