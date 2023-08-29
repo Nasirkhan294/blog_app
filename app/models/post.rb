@@ -5,7 +5,7 @@ class Post < ApplicationRecord
   has_many :likes, dependent: :destroy
 
   def five_recent_comments
-    comments.order(created_at: :desc).limit(5)
+    comments.includes(:author).order(created_at: :desc).limit(5)
   end
 
   # validations
