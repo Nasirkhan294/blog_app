@@ -14,7 +14,7 @@ describe 'User Show Page', type: :feature do
       text: 'This is my first post'
     )
 
-    post2 = Post.create(
+    Post.create(
       author: user,
       title: 'Hi rails',
       text: 'This is another post'
