@@ -3,8 +3,8 @@
     <p>There are no users for now</p>
   <% end %>
   <% @users.each do |user| %>
-    <a href="/users/<%= user.id %>" class="text-decoration-none">
-      <%= render 'shared/user_card', user: user %>
+    <%= link_to user.name, user_path(user), class: "text-decoration-none" %>
+    <%= render 'shared/user_card', user: user %>
     </a>
   <% end %>
   <%= link_to 'Add a new post', "/users/#{@current_user.id}/posts/new", class: "btn btn-primary" %>
