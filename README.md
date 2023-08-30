@@ -54,6 +54,7 @@
 - [x] **Views**
 - [x] **Add Forms**
 - [x] **Capybara tests**
+- [x] **Add devise**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,7 +119,7 @@ bundle exec rspec spec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add devise**
+- [ ] **Add API endpoints**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
