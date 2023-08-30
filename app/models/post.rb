@@ -18,7 +18,7 @@ class Post < ApplicationRecord
 
     "#{text.slice(0, 50)} ..."
   end
-  
+
   def update_posts_counter
     author.update(posts_counter: author.posts.count)
   end
