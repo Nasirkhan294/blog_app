@@ -39,6 +39,11 @@ RSpec.describe 'Posts#alls', type: :system do
     expect(page).to have_content(@first_post.title)
   end
 
+  it 'I can see some of the post\'s body.' do
+    visit "/users/#{@tom.id}/posts"
+    expect(page).to have_content(@first_post.excerpt)
+  end
+
   it 'I can see the first comments on a post.' do
     visit "/users/#{@tom.id}/posts"
     @first_post.five_recent_comments.each do |comment|
