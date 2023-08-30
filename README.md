@@ -53,6 +53,7 @@
 - [x] **Controllers**
 - [x] **Views**
 - [x] **Add Forms**
+- [x] **Capybara tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +90,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```
-bundle exec rspec spec/models
+bundle exec rspec spec
 
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -103,6 +104,12 @@ bundle exec rspec spec/models
 - GitHub: [Nasirkhan294](https://github.com/Nasirkhan294)
 - Twitter: [NasirMa35888225](https://twitter.com/NasirMa35888225)
 - LinkedIn: [nasirmahd](https://www.linkedin.com/in/nasirmahd/)
+
+👤  **Shalini Nayan**
+
+- GitHub: [@ShaliniNayan](https://github.com/ShaliniNayan)
+- Twitter: [@sndprs](https://twitter.com/sndprs)
+- LinkedIn: [shalininayan](https://www.linkedin.com/in/shalininayan/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
