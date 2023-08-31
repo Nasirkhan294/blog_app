@@ -1,14 +1,15 @@
 <div class="container mt-5">
-  <%= render 'shared/user_card', user: @author %>
+  <%= render 'shared/user_card', user: @author unless @author.nil? %>
 
   <% if @posts.empty? %>
     <p>This user has no posts yet</p>
+    <%= link_to 'Back to users', '/users', class: 'btn btn-info' %>
   <% end %>
   <% @posts.each do |post| %>
     <a href="/users/<%= post.author.id %>/posts/<%= post.id %>" class="text-decoration-none">
       <div class="mb-4">
         <%= render 'shared/post_card', post: post %>
-        <%= render 'shared/comments_card', comments: post.five_recent_comments unless post.five_recent_comments.empty? %>
+        <%= render 'shared/comments_card', comments: post.five_recent_comments, user_id: post.author.id unless post.five_recent_comments.empty? %>
       </div>
     </a>
   <% end %>

@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  authorize_resource
+
   def new
     @comment = Comment.new
     @post = Post.find(params[:post_id])
@@ -16,6 +18,12 @@ class CommentsController < ApplicationController
       flash.now[:error] = 'error: comment could not be saved'
       redirect_to new_comment
     end
+  end
+
+  def destroy
+    post = Post.find(params[:post_id])
+    post.comments.destroy(params[:id])
+    redirect_to "/users/#{params[:user_id]}/posts/#{post.id}"
   end
 
   private

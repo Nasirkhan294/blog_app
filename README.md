@@ -55,6 +55,7 @@
 - [x] **Add Forms**
 - [x] **Capybara tests**
 - [x] **Add devise**
+- [x] **Add authorization**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
