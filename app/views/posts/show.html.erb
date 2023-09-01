@@ -10,11 +10,15 @@
       </div>
       <p class="mt-2"><%= @post.text %></p>
     </div>
-    <div class="card-footer d-flex justify-content-between">
-      <%= render 'shared/like' %>
-      <%= link_to 'Delete Post', "/users/#{@current_user.id}/posts/#{@post.id}", class: 'btn btn-danger', data: { turbo_method: :delete } if can? :destroy, @post %>
-    </div>
+    <% unless @current_user.nil? %>
+      <div class="card-footer d-flex justify-content-between">
+        <%= render 'shared/like' %>
+        <%= link_to 'Delete Post', "/users/#{@current_user.id}/posts/#{@post.id}", class: 'btn btn-danger', data: { turbo_method: :delete } if can? :destroy, @post %>
+      </div>
+    <% end %>
   </div>
-  <%= render 'shared/comments_card', user_id: @current_user.id, post_id: @post.id, comments: @post.comments unless @post.comments.empty? %>
-  <%= link_to 'Add a new comment', "/users/#{@current_user.id}/posts/#{@post.id}/comments/new", class: "btn btn-primary mt-3" %>
+  <%= render 'shared/comments_card', comments: @post.comments unless @post.comments.empty? %>
+  <% unless @current_user.nil? %>
+    <%= link_to 'Add a new comment', "/users/#{@current_user.id}/posts/#{@post.id}/comments/new", class: "btn btn-primary mt-3" %>
+  <% end %>
 </div>

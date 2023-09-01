@@ -8,6 +8,6 @@
     </a>
   <% end %>
   <% if @current_user %>
-    <%= link_to 'Add a new post', "/users/#{@current_user.id}/posts/new", class: "btn btn-primary" %>
+    <%= link_to 'Add a new post', new_user_post_path(user_id: @current_user.id), class: "btn btn-primary" %>
   <% end %>
 </div>
