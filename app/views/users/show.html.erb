@@ -7,7 +7,7 @@
     </div>
   </div>
   <% @user.three_recent_posts.each do |post| %>
-    <a href="/users/<%= @user.id %>/posts/<%= post.id %>" class="text-decoration-none">
+    <a href="<%= user_post_path(user_id: @user.id, id: post.id) %>" class="text-decoration-none">
       <div class="mb-3">
         <%= render 'shared/post_card', post: post %>
       </div>

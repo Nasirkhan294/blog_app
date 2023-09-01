@@ -56,6 +56,7 @@
 - [x] **Capybara tests**
 - [x] **Add devise**
 - [x] **Add authorization**
+- [x] **Add api endpoints**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,7 +121,7 @@ bundle exec rspec spec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add API endpoints**
+- [ ] **Modern UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
